@@ -20,6 +20,15 @@ $aquamarine: #85FFC7;
         border-radius: .4rem;
         padding: 1rem;
         color: $skobeloff;
+        transition: all .2s ease;
+    }
+    input[type="submit"] {
+        width: 10rem;
+        align-self: center;
+    }
+    input[type="submit"]:hover {
+        background-color: $skobeloff;
+        color: $day;
     }
     form {
         display: flex;
@@ -39,6 +48,10 @@ $aquamarine: #85FFC7;
             color: $coral;
             background-color: $night;
             border: solid 1px $coral;
+        }
+        input[type="submit"]:hover {
+            background-color: $coral;
+            color: $day;
         }
     }
 }

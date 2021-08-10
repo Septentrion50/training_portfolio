@@ -16,10 +16,26 @@ $aquamarine: #85FFC7;
     }
     a {
         color: $skobeloff;
+        text-decoration: none;
+        transition: all .2s ease;
+        border-bottom: 1px solid $day;
+    }
+    a:hover {
+        border-bottom: 1px solid $skobeloff;
     }
     button {
         width: 10rem;
         align-self: flex-end;
+        padding: .5rem;
+        border-radius: .3rem;
+        transition: all .2s ease;
+        background-color: $day;
+        border: 1px solid $skobeloff;
+        color: $skobeloff;
+    }
+    button:hover {
+        background-color: $skobeloff;
+        color: $day;
     }
     &.night {
         background-color: $night;
@@ -28,6 +44,19 @@ $aquamarine: #85FFC7;
         }
         a {
             color: $coral;
+            border-bottom: 1px solid $night;
+        }
+        a:hover {
+            border-bottom: 1px solid $coral;
+        }
+        button {
+            background-color: $night;
+            border: 1px solid $coral;
+            color: $coral;
+        }
+        button:hover {
+            background-color: $coral;
+            color: $day;
         }
     }
 }
