@@ -1,0 +1,35 @@
+$day: #E6E6E6;
+$night: #39393A;
+$coral: #FF8552;
+$skobeloff: #297373;
+$aquamarine: #85FFC7;
+
+.works {
+    background-color: $day;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1rem;
+    align-items: center;
+    h3, p {
+        color: $night;
+    }
+    ul {
+        list-style: none;
+        padding: 2rem 0;
+    }
+    li {
+        display: flex;
+        gap: 1rem;
+        padding: 2rem 0;
+        img {
+            max-width: 30rem;
+        }
+    }
+    &.night {
+        background-color: $night;
+        h3, p {
+            color: $day;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+$day: #E6E6E6;
+$night: #39393A;
+$coral: #FF8552;
+$skobeloff: #297373;
+$aquamarine: #85FFC7;
+
+.header {
+    background-color: $day;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1rem;
+    align-items: center;
+    h1 {
+        color: $night;
+    }
+    a {
+        color: $skobeloff;
+    }
+    button {
+        width: 10rem;
+        align-self: flex-end;
+    }
+    &.night {
+        background-color: $night;
+        h1 {
+            color: $day;
+        }
+        a {
+            color: $coral;
+        }
+    }
+}

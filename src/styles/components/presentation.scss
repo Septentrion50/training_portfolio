@@ -1,0 +1,29 @@
+$day: #d6d6d6;
+$night: #49494A;
+$coral: #FF8552;
+$skobeloff: #297373;
+$aquamarine: #85FFC7;
+
+.pres {
+    background-color: $day;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    width: 100%;
+    align-items: center;
+    h2 {
+        color: $night;
+    }
+    p {
+        color: $night;
+    }
+    &.night {
+        background-color: $night;
+        h2 {
+            color: $day;
+        }
+        p {
+            color: $day;
+        }
+    }
+}
